@@ -1,0 +1,102 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; /* Изменено на flex-start для правильного выравнивания */
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      display: flex;
+      width: 80%;
+      max-width: 1000px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden; /* Скрыть переполнение для контейнера */
+    }
+
+    .title-section {
+      width: 30%;
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: left;
+      position: sticky; /* Добавлено для фиксации */
+      top: 0; /* Зафиксировать на верхней части экрана */
+      height: 100vh; /* Задать высоту для полной высоты экрана */
+      overflow-y: auto; /* Позволяет прокручивать содержимое */
+    }
+
+    .content-section {
+      width: 70%;
+      padding: 20px;
+      overflow-y: auto; /* Позволяет прокручивать содержимое */
+      height: 100vh; /* Задать высоту для полной высоты экрана */
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .post {
+      margin-bottom: 20px;
+    }
+
+    .post-title {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .post-content {
+      font-size: 1.1em;
+      color: #555;
+    }
+
+    .test-section {
+      border-top: 1px solid #ddd;
+      margin-top: 20px;
+      padding-top: 20px;
+    }
+
+    .test-question {
+      font-weight: bold;
+    }
+
+    .test-answer {
+      margin-left: 15px;
+    }
+
+    .book-list li {
+        margin-bottom: 10px;
+    }
+
+    /* Note style */
+    .note {
+      background-color: #24292f;
+      color: #c9d1d9;
+      padding: 10px 20px;
+      border-left: 3px solid #58a6ff;
+      margin-bottom: 20px;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
+    .note a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+
+    .note a:hover {
+      text-decoration: underline;
+    }
+
+    .note strong {
+      color: #58a6ff;
+    }
+
+    .white-text {
+        color: white;
+    }
