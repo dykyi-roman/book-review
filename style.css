@@ -100,9 +100,3 @@ h1 {
 .white-text {
     color: white;
 }
-
-.book-list li:last-child {
-    margin-top: 20px; /* Add space above the Back link */
-    border-top: 1px solid #ddd; /* Optional: Add a separator line */
-    padding-top: 10px; /* Optional: Add padding */
-}
