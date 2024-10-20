@@ -11,7 +11,7 @@
       padding: 0;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start; /* Изменено на flex-start для правильного выравнивания */
       height: 100vh;
       background-color: #f4f4f4;
     }
@@ -22,6 +22,7 @@
       max-width: 1000px;
       background-color: #fff;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden; /* Скрыть переполнение для контейнера */
     }
 
     .title-section {
@@ -30,11 +31,17 @@
       color: #fff;
       padding: 20px;
       text-align: left;
+      position: sticky; /* Добавлено для фиксации */
+      top: 0; /* Зафиксировать на верхней части экрана */
+      height: 100vh; /* Задать высоту для полной высоты экрана */
+      overflow-y: auto; /* Позволяет прокручивать содержимое */
     }
 
     .content-section {
       width: 70%;
       padding: 20px;
+      overflow-y: auto; /* Позволяет прокручивать содержимое */
+      height: 100vh; /* Задать высоту для полной высоты экрана */
     }
 
     h1 {
@@ -100,30 +107,18 @@
   <!-- Left section (Title) -->
   <div class="title-section">
     <h1>Books</h1>
-    <!-- List of books -->
-    <div class="book-list">
-      <ul>
-        <li><a href="https://dykyi-roman.github.io/book-review/atlas_shrugged.html">Atlas Shrugged</a></li>
-        <li><a href="https://dykyi-roman.github.io/book-review/from_third_world_to_first-the_singapore_story_1965_2000.html">From Third World To First: The Singapore Story: 1965-2000</a></li>
-      </ul>
-    </div>
+    <ul class="book-list">
+      <li>1. <a href="https://dykyi-roman.github.io/book-review/from_third_world_to_first-the_singapore_story_1965_2000.html">From Third World To First: The Singapore Story: 1965-2000</a></li>
+      <li>2. <a href="https://dykyi-roman.github.io/book-review/atlas_shrugged.html">Atlas Shrugged</a></li>
+    </ul>
   </div>
 
   <!-- Right section (Post and Test) -->
   <div class="content-section">
     <div class="post">
-      <div class="post-title"></div>
+      <div class="post-title">From Third World To First: The Singapore Story: 1965-2000</div> <!-- Заголовок поста -->
       <div class="post-content">
-        Книга Айн Рэнд «Атлант расправил плечи»— роман-антиутопия 1957года. Сюжет основан на том, что США переходит
-        к плановой экономике ижесткому госрегулированию рынка, все предприниматели таинственным образом исчезают,
-        и страна погружается в новые темные века.
-        <br><br>
-        Айн Рэнд обыгрывает в книге свои убеждения: капитализм, свободный рынок, конкуренция, индивидуализм — это блага
-        для людей. Напротив, социализм, вмешательство государства в экономику, коллективизм мешают обществу развиваться.
-        <br><br>
-        Основная мысль книги: без индивидуальной творческой реализации людей общество и государство не может
-        существовать. И никакие коллективистские ценности не заменят вклад предпринимателей.
-
+        ...
       </div>
     </div>
 
