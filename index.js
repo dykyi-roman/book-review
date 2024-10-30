@@ -13,7 +13,7 @@ const bookList = [
   },
   {
     title: "Elegant Objects",
-    URL: "https://dykyi-roman.github.io/book-review/elegant_objects.html"
+    url: "https://dykyi-roman.github.io/book-review/elegant_objects.html"
   }
 ];
 
