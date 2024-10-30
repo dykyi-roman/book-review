@@ -1,1 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elegant Objects</title>
+  <link rel="stylesheet" href="https://dykyi-roman.github.io/book-review/style.css">
+</head>
+<body>
 
+<div class="container">
+  <!-- Left section (Title) -->
+  <div class="title-section">
+    <h1>Books</h1>
+    <ul class="book-list">
+        <!-- dynamic load -->
+    </ul>
+
+    <ul class="book-list">
+      <li><a class="white-text" href="https://dykyi-roman.github.io/book-review/index.html">Back</a></li>
+    </ul>
+  </div>
+
+  <!-- Right section (Post and Test) -->
+  <div class="content-section">
+    <div class="post">
+      <div class="post-title">Elegant Objects</div>
+      <div>Author: Lee Kuan Yew</div>
+      <div class="post-content">
+        <p>Elegant Objects (EO) is an object-oriented programming paradigm that renounces traditional techniques like null, getters-and-setters, code in constructors, mutable objects, static methods, annotations, type casting, implementation inheritance, data objects, etc.</p>
+      </div>
+    </div>
+
+    <hr>
+    
+    <div class="note">
+      Never use the -er postfix when naming your object.
+
+      I would not take this rule strictly. Do not matter what postfix you use for object naming. Much important how you think when choosing the next name for your object. Your thinking should be declarative and not imperative. Class this is a factory of objects. Use a small class and compose it in a multi-layer structure.
+    </div>
+
+    <div class="note">
+      Keep your constructor code-free.
+
+      It is meaning that your constructor should keep all necessary arguments for initializing the state of a new object. Do not change this state after creating (VO)
+    </div>
+
+    <div class="note">
+      Encapsulate as little as possible your class and interface.
+
+      The higher the complexity, the lower the maintainability, which leads to the waste of time and money. 5 methods are the maximum. Use equals instead of == operator for comparison between objects.
+    </div>
+
+    <div class="note">
+      Always use Interfaces.
+
+      The perfect object - this is an object whose methods implement the interface. We know exactly which object to do. Easy work and easy testable.
+    </div>
+    
+    <div class="note">
+      Choose method names carefully.
+
+      Methods name - this is the same as your name. How your naming method (variable) - so they will contact her other object* This is the face of your object. The method should do one thing - Get or Set. Example method int save(); - bad naming because the function does a two job, save and return value.
+    </div>
+
+    <div class="note">
+       Do not use a public const and static function. Const use for sharing data between objects. Objects should not share anything, this is the road to high coupling and loss of cohesion. A static function is a functional way to write code. It's hard to test and combine together for work.
+    </div>
+
+    <div class="note">
+      write tests instead of documentation. Don't mock, use fakes
+    </div>
+
+    <div class="note">
+       Never accept NULL arguments. NUL is eval because you need to check each variable === null.
+    </div>
+
+    <div class="note">
+       Objects should be immutable.
+
+      He does not change his state over his entire lifetime, it does not matter how he behaves and what data his methods return.
+      The immutable object does not have an identity and its state never changes. An immutable object, the state is his identity
+      Basically, we have 3 elements in every object: identity, state, and behavior. Example: $file = new File('file_path');
+
+Identity - is what distinguishes $file from other
+state - is what $file knows about the file on disk
+behavior - is what $file can do for our request.
+
+    </div>
+
+    <div class="note">
+       Never use getters and setters.
+
+      The class that has only getters and setters is not a class, rather it is a data structure. Prefix get- and set- is the wrong naming.
+      getXXX() is saying to get to the data, find XXX, and return it.
+      XXX() is saying how many XXX do you have. We do not work with objects - like with the storage of data. The data stay not naked.
+    </div>
+
+    <div class="note">
+       Do not use a new XXX() inside of the constructor. Except in the secondary constructor (static constructor). Following this rule, your objects will be fully decoupled from each other, and their testability and maintainability will be much higher.
+    </div>
+
+    <div class="note">
+      Avoid type introspection and casting.
+      Introspection is one of the techniques under the umbrella term reflection. Reflection is evil too. (XXX instance of YYY) using this operator we check the type of object in runtime. This way is wrong and has a hidden coupling.
+      Typecasting is also wrong (int) String - it is similar to gender discrimination, you just tell him what it should be.
+    </div>
+
+    <div class="note">
+        Never return NULL. This is ugly and wrong; Follow the Fail Fast principle, this way is shorter, cleaner, more maintainability, and just better. When the method in the object returns null - we can`t trust him anymore. When we can`t trust the method - we can`t trust the whole object.
+    </div>
+
+    <div class="note">
+       Fail fast or fail to save? These are two philosophies regarding software. I am a big fan of first. Fale is safe - motivates us to keep the app running even if it has a bug, IO problems, memory leak, or overflow. If it breaks in production we can easily find a problem and reproduce the situation. hiding bugs - make our app is not robust, it can fail at any moment. the sooner we see the problem - the sooner we fix them. When you need to return something that is not found, either throw an exception, or the collection or null object.
+    </div>
+
+    <div class="note">
+        Think of the object as a person.
+    </div>    
+
+    <div class="note">
+      Avoid reusing the same Constants for different contexts. You have a risk have a side effect when someone changes the text for self-context. 
+    </div>
+    
+    <div class="note">
+       Avoid using a configurable object or bool parameters. Instead of using a new class or decorator.
+    </div>
+
+    <div class="note">
+       Avoid temporal coupling. We should have the ability to swap any lines without any notice from the compiler and without breaking our logic of code
+    </div>
+
+    <div class="note">
+       Do not use Annotation, to transform or manipulate data. This approach worse getter and setter. We do not leave the object a chance to encapsulate its data.
+    </div>
+
+    <div class="note">
+       Annotation, MVC, ORM, DI Containers, Reflection - can kill your application.
+    </div>
+    
+    <div class="note">
+       Follow a principle while making ou objects - "Tell don't ask". Rather than asking the object for data and action on this data, we should instead tell the object what to do. Instead of extracting data from one object and put it into other objects, we compose one object to other object and other objects like a Russian doll.
+    </div>
+    
+    <div class="test-section">
+      <div class="test-question">Useful links</div>
+      <div class="test-answer">
+        <a href="https://www.elegantobjects.org/">Web site</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://dykyi-roman.github.io/book-review/index.js"></script>
+  
+</body>
+</html>
