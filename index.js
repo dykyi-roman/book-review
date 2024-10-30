@@ -10,6 +10,10 @@ const bookList = [
   {
     title: "Sapiens: A Brief History of Humankind",
     url: "https://dykyi-roman.github.io/book-review/sapiens-a_brief_history_of_humankind.html"
+  },
+  {
+    title: "Elegant Objects",
+    URL: "https://dykyi-roman.github.io/book-review/elegant_objects.html"
   }
 ];
 
