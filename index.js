@@ -1,7 +1,7 @@
 const bookList = [
   {
-    title: "The Story of My Experiments with Truth",
-    url: "https://dykyi-roman.github.io/book-review/my_life.html" 
+    title: "The Story of My Life",
+    url: "https://dykyi-roman.github.io/book-review/story_of_my_life.html" 
   },
   {
     title: "From Third World To First: The Singapore Story: 1965-2000",
