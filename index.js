@@ -1,4 +1,8 @@
 const bookList = [
+    {
+    title: "Thinking, Fast and Slow",
+    url: "https://dykyi-roman.github.io/book-review/thinking_fast_and_slow.html" 
+  },
   {
     title: "The Story of My Life",
     url: "https://dykyi-roman.github.io/book-review/story_of_my_life.html" 
