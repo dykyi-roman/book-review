@@ -1,5 +1,9 @@
 const bookList = [
-    {
+  {
+    title: "The Power of Habit",
+    url: "https://dykyi-roman.github.io/book-review/the_power_of_habit.html"
+  },
+  {
     title: "Thinking, Fast and Slow",
     url: "https://dykyi-roman.github.io/book-review/thinking_fast_and_slow.html" 
   },
