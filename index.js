@@ -1,5 +1,9 @@
 const bookList = [
   {
+    title: "The 7 Habits of Highly Effective People",
+    url: "https://dykyi-roman.github.io/book-review/7_habits_of_highly_effective_people.html"
+  },
+  {
     title: "The Power of Habit",
     url: "https://dykyi-roman.github.io/book-review/the_power_of_habit.html"
   },
